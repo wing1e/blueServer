@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    /* 基础配置 */
+    "target": "ES2020",            // 编译目标 ES 版本（根据你的 Node.js 版本调整）
+    "module": "CommonJS",          // 模块系统（Node.js 推荐 CommonJS）
+    "outDir": "./dist",           // 输出目录
+    "rootDir": "./src",           // 源代码目录
+    "sourceMap": true,            // 生成 sourcemap 方便调试
+    "declaration": true,          // 生成 .d.ts 类型声明文件
+
+    /* 严格类型检查（推荐开启） */
+    "strict": true,               // 启用所有严格类型检查选项
+    "noImplicitAny": true,        // 禁止隐式 any 类型
+    "strictNullChecks": true,     // 严格的 null 检查
+    "strictFunctionTypes": true,  // 严格的函数类型检查
+    "strictBindCallApply": true,  // 严格的 bind/call/apply 检查
+
+    /* 模块解析配置 */
+    "moduleResolution": "node",  // 使用 Node.js 的模块解析策略
+    "esModuleInterop": true,     // 允许 CommonJS 和 ES 模块互操作
+    "resolveJsonModule": true,   // 允许导入 JSON 文件
+
+    /* 其他实用配置 */
+    "skipLibCheck": true,        // 跳过声明文件类型检查（加快编译速度）
+    "forceConsistentCasingInFileNames": true,  // 强制文件名大小写一致
+    "types": ["node"],           // 包含 Node.js 类型定义
+    "baseUrl": ".",              // 基础目录（配合 paths 使用）
+    "paths": {                   // 路径别名（可选）
+      "@/*": ["./src/*"]
+    }
+  },
+
+  /* 包含和排除文件 */
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.ts",    // 排除测试文件
+    "**/*.spec.ts",    // 排除测试文件
+    "**/__tests__/*"  // 排除测试目录
+  ]
+}
