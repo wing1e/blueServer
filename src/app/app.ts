@@ -1,4 +1,5 @@
 import express from "express";
+import loginRouter from "./login/router";
 
 const app = express();
 
@@ -17,5 +18,7 @@ app.use((req, res, next) => {
 });
 
 app.use(express.json());
+// 路由
+app.use(loginRouter);
 
 export default app;

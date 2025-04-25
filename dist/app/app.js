@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
+const router_1 = __importDefault(require("./login/router"));
 const app = (0, express_1.default)();
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
@@ -17,8 +18,7 @@ app.use((req, res, next) => {
     }
 });
 app.use(express_1.default.json());
-app.get('/', (req, res) => {
-    res.json({ message: 'Welcome to Blue Service API' });
-});
+// 路由
+app.use(router_1.default);
 exports.default = app;
 //# sourceMappingURL=app.js.map

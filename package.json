@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "start": "tsc && node ./dist/main.js"
+    "start": "tsc-watch --onSuccess \"node ./dist/main.js\""
   },
   "dependencies": {
     "dotenv": "^16.5.0",
@@ -13,6 +13,7 @@
   "devDependencies": {
     "@types/express": "^5.0.1",
     "@types/node": "^22.14.1",
+    "tsc-watch": "^6.2.1",
     "typescript": "^5.8.3"
   }
 }

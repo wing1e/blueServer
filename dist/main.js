@@ -11,10 +11,10 @@ app_1.default.listen(app_config_1.APP_PORT, () => {
 });
 mysql_1.conn.connect(err => {
     if (err) {
-        console.log("数据库连接失败", err);
+        console.log("数据库连接失败/(ㄒoㄒ)/~~", err);
     }
     else {
-        console.log("数据库连接成功!!!");
+        console.log("数据库连接成功!!!(*^_^*)");
     }
 });
 //# sourceMappingURL=main.js.map

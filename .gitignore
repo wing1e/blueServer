@@ -41,3 +41,6 @@ typings/
 
 # TypeScript cache
 .tscache
+
+# 忽略 .env
+.env*
