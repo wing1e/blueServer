@@ -1,5 +1,5 @@
 import express from 'express';
-import { wxLogin } from './controller';
+import { wxLogin } from '../controller/login.controller';
 
 const router = express.Router();
 

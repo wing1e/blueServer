@@ -1,5 +1,5 @@
 import express from "express";
-import loginRouter from "./login/router";
+import loginRouter from "./router/login.router";
 
 const app = express();
 

@@ -1,6 +1,6 @@
 
 import { Request, Response, NextFunction } from "express";
-import { getSession } from "./service";
+import { getSession } from "../service/login.service";
 
 // 微信登录
 export const wxLogin = async (req: Request, res: Response, next: NextFunction) => {
